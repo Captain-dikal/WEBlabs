@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Calendar</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<div>
+			<select onchange="toggleClassCalendarInner();">
+				<option disabled>Select Theme</option>
+				<option selected>White</option>
+				<option>Black</option>
+			</select>
+		</div>
+		<div class="container" id="CalendarInner" style="background:rgb(255, 255, 255);">
+			<h1><span id="mounth"></span> <span id="year"></span></h1>
+			<div class="headc">
+				<div class="td">
+					<h3>Mon</h3>
+				</div>
+				<div class="td">
+					<h3>Tue</h3>
+				</div>
+				<div class="td">
+					<h3>Wed</h3>
+				</div>
+				<div class="td">
+					<h3>Thu</h3>
+				</div>
+				<div class="td">
+					<h3>Fri</h3>
+				</div>
+				<div class="td">
+					<h3>Sat</h3>
+				</div>
+				<div class="td">
+					<h3>Sun</h3>
+				</div>
+			</div>
+			<div class="mainc" data-week="1">
+				<div class="td" data-day="1">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="2">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="3">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="4">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="5">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="6">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="7">
+					<h3></h3>
+				</div>
+			</div>
+			<div class="mainc" data-week="2">
+				<div class="td" data-day="1">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="2">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="3">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="4">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="5">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="6">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="7">
+					<h3></h3>
+				</div>
+			</div>
+			<div class="mainc" data-week="3">
+				<div class="td" data-day="1">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="2">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="3">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="4">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="5">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="6">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="7">
+					<h3></h3>
+				</div>
+			</div>
+			<div class="mainc" data-week="4">
+				<div class="td" data-day="1">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="2">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="3">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="4">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="5">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="6">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="7">
+					<h3></h3>
+				</div>
+			</div>
+			<div class="mainc" data-week="5">
+				<div class="td" data-day="1">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="2">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="3">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="4">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="5">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="6">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="7">
+					<h3></h3>
+				</div>
+			</div>
+			<div class="mainc" data-week="6">
+				<div class="td" data-day="1">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="2">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="3">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="4">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="5">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="6">
+					<h3></h3>
+				</div>
+				<div class="td" data-day="7">
+					<h3></h3>
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

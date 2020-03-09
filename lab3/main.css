@@ -1,0 +1,48 @@
+
+.td {
+    width: calc(100% / 7);
+    float: left;
+}
+.mainc {
+    clear: both;
+}
+.td>h3 {
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+    color: #222222;
+    width: fit-content;
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px;
+}
+.td>h3.currentDay {
+    background: red;
+    color: #d8d8d8;
+}
+.td>h3.party {
+    background: #ff9c00;
+}
+.dark .td>h3 {
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+    color: #fff;
+    width: fit-content;
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px;
+}
+.dark  .td>h3.currentDay {
+    background: red;
+    color: #fff;
+}
+.dark .td>h3.party {
+    background: #ff9c00;
+}
+.dark h1{
+	color: #fff;
+}
+div#CalendarInner {
+    padding: 15px;
+}
