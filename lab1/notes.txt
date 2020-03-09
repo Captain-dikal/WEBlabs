@@ -1,0 +1,2 @@
+add action onclick for serach button OR onchage\onedit for input search
+find text DOM(only JS!!!) and .css('display','block')|.css('display','none')
