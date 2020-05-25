@@ -1,27 +1,27 @@
-function filter_task(t){
-	var ch= document.getElementsByClassName('checkbox');
-	if(t=="checked"){
-		for (var i = 0; i < ch.length; i++){
-			if(ch[i].childNodes[0].childNodes[0].checked == true){
-				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
+function filter_task(positionCheckbox){
+	var elementCheckbox= document.getElementsByClassName('checkbox');
+	if(positionCheckbox=="checked"){
+		for (var i = 0; i < elementCheckbox.length; i++){
+			if(elementCheckbox[i].childNodes[0].childNodes[0].checked == true){
+				elementCheckbox[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
 			}else{
-				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'none';
+				elementCheckbox[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'none';
 			}
 		}
 	}
-	if(t=="unchecked"){
-		for (var i = 0; i < ch.length; i++){
-			if(ch[i].childNodes[0].childNodes[0].checked == true){
-				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'none';
+	if(positionCheckbox=="unchecked"){
+		for (var i = 0; i < elementCheckbox.length; i++){
+			if(elementCheckbox[i].childNodes[0].childNodes[0].checked == true){
+				elementCheckbox[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'none';
 			}else{
-				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
+				elementCheckbox[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
 			}
 		}
 	}
-	if(t=="all"){
-		for (var i = 0; i < ch.length; i++){
-			if(ch[i].childNodes[0].childNodes[0].checked == true){
-				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
+	if(positionCheckbox=="all"){
+		for (var i = 0; i < elementCheckbox.length; i++){
+			if(elementCheckbox[i].childNodes[0].childNodes[0].checked == true){
+				elementCheckbox[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
 			}
 		}
 	}
@@ -64,10 +64,10 @@ window.onload = function () {
 		this.parentElement.remove();
 		console.log('delete');
     };
-    var k = document.getElementsByClassName('checkbox').length;
-    if(k>1){
-		var l = document.getElementsByClassName('allCheck').length;
-		if(l==0){
+    var lengthCheckbox = document.getElementsByClassName('checkbox').length;
+    if(lengthCheckbox>1){
+		var lengthCheckn = document.getElementsByClassName('allCheck').length;
+		if(lengthCheckn==0){
 			var taskContent = "Check All";
 			var containerToDo = document.getElementById('container-to-do');
 			var newTask = document.createElement('div');
