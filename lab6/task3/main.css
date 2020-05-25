@@ -3,6 +3,8 @@
   padding: 15px;
   background: #eee;
   margin-bottom: 15px;
+  width:450px;
+  overflow:auto;
 }
 .chat-wrap-element_in {
   border: 1px solid #000;
