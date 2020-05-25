@@ -123,3 +123,12 @@ window.onload = function () {
     };
   */
 }
+filter-task_checked.onclick = function(){
+	filter_task('checked');
+};
+filter-task_unchecked.onclick = function(){
+	filter_task('unchecked');
+};
+filter-task_all.onclick = function(){
+	filter_task('all');
+};
