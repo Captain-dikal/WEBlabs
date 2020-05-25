@@ -5,7 +5,7 @@
 html {
     box-sizing: border-box;
 }
-header {
+.header {
     padding: 50px 0;
 }
 .container {
