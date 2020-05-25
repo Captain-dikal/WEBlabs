@@ -1,4 +1,4 @@
-function sreach_func(){
+function sreachFunc(){
 	var search= document.getElementsByTagName("input")[0];
 	var searchtext=search.value;
 	searchtext=searchtext.replace(/\s/g, '');
