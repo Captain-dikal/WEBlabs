@@ -5,16 +5,16 @@ function sreachFunc(){
 	searchtext=searchtext.toLowerCase();
 	console.log(searchtext);
 	var allhtml = document.body.innerHTML;
-	var tf='';
-	var sp='';
+	var textfind='';
+	var searchpath='';
 	var elemf = document.getElementsByClassName('is-one-third');
 	for (var i = 0; i < elemf.length; i ++){
-		tf=elemf[i].innerText;
-		tf=tf.replace(/\s/g, '');
-		tf=tf.toLowerCase();
-		sp=tf.includes(searchtext);
-		console.log(sp);
-		if(sp==true){
+		textfind=elemf[i].innerText;
+		textfind=textfind.replace(/\s/g, '');
+		textfind=textfind.toLowerCase();
+		searchpath=textfind.includes(searchtext);
+		console.log(searchpath);
+		if(searchpath!=false){
 			elemf[i].style.display = 'block';
 		}else{
 			elemf[i].style.display = 'none';
