@@ -1,15 +1,13 @@
 function sreachFunc(){
-	var search= document.getElementsByTagName("input")[0];
+	var search= document.getElementsByTagName('input')[0];
 	var searchtext=search.value;
 	searchtext=searchtext.replace(/\s/g, '');
 	searchtext=searchtext.toLowerCase();
 	console.log(searchtext);
 	var allhtml = document.body.innerHTML;
-	
-	//(".column.is-one-third")
-	var tf="";
-	var sp="";
-	var elemf = document.getElementsByClassName("is-one-third");
+	var tf='';
+	var sp='';
+	var elemf = document.getElementsByClassName('is-one-third');
 	for (var i = 0; i < elemf.length; i ++){
 		tf=elemf[i].innerText;
 		tf=tf.replace(/\s/g, '');
